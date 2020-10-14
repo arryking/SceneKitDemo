@@ -43,14 +43,12 @@ public class CustomSceneView extends SceneView {
         // Loads the model of a scene by reading files from assets.
         loadScene("SceneView/scene.gltf");
 
-        // Loads skybox materials by reading files from assets.
-        loadSkyBox("SceneView/internal_ground_ao_texture.jpeg");
-
         // Loads specular maps by reading files from assets.
-        loadSpecularEnvTexture("SceneView/puma_low-specular.jpeg");
+        loadSpecularEnvTexture("SceneView/specularEnvTexture.dds");
 
         // Loads diffuse maps by reading files from assets.
-        loadDiffuseEnvTexture("SceneView/puma_low-diffuse.jpeg");
+        loadDiffuseEnvTexture("SceneView/diffuseEnvTexture.dds");
+
     }
 
     /**

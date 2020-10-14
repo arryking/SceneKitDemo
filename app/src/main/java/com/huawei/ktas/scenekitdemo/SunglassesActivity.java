@@ -22,22 +22,21 @@ public class SunglassesActivity extends Activity {
     }
 
     private void init() {
-        final float[] position = {0.0f, 0.0f, 0.0f};
-        final float[] rotation = {1.0f, 0.0f, 0.0f, 0.0f};
-        final float[] scale = {1.0f, 1.0f, 1.0f};
+        final float[] position = {0.0f, 0.032f, 0.0f};
+        final float[] rotation = {1.0f, -0.1f, 0.0f, 0.0f};
+        final float[] scale = {0.0004f, 0.0004f, 0.0004f};
 
-        mFaceView.setOnLongClickListener(new View.OnLongClickListener() {
+        mFaceView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onLongClick(View view) {
+            public void onClick(View v) {
                 if(!isLoaded) {
                     // Load materials.
-                    int index = mFaceView.loadAsset("FaceView/scene.gltf", LandmarkType.TIP_OF_NOSE);
+                    int index = mFaceView.loadAsset("FaceView/sunglasses_mustang.glb", LandmarkType.TIP_OF_NOSE);
                     // (Optional) Set the initial status.
                     if(index < 0){
                         Toast.makeText(SunglassesActivity.this, "Something went wrong!", Toast.LENGTH_LONG).show();
-                        return true;
                     }
-                    mFaceView.setInitialPose(index, position, rotation, scale);
+                    mFaceView.setInitialPose(index, position, scale, rotation);
                     isLoaded = true;
                 }
                 else{
@@ -45,10 +44,10 @@ public class SunglassesActivity extends Activity {
                     mFaceView.loadAsset("", LandmarkType.TIP_OF_NOSE);
                     isLoaded = false;
                 }
-                return true;
             }
         });
     }
+
     /**
      * Synchronously call the onResume() method of the FaceView.
      */

@@ -3,50 +3,50 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 18879,
+      "count": 38984,
       "max": [
-        0.058848999440670013,
-        -0.26710200309753418,
-        0.13956999778747559
+        0.35644200444221497,
+        0.45015299320220947,
+        1
       ],
       "min": [
-        -0.049904000014066696,
-        -0.38994100689888,
-        -0.15361200273036957
+        -0.35644200444221497,
+        -0.45015299320220947,
+        -1
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 226548,
+      "byteOffset": 467808,
       "componentType": 5126,
-      "count": 18879,
+      "count": 38984,
       "max": [
-        0.99999713897705078,
-        0.99999397993087769,
-        0.9998708963394165
+        0.99999314546585083,
+        1,
+        0.99971938133239746
       ],
       "min": [
-        -0.99997955560684204,
-        -0.99996846914291382,
-        -0.99976086616516113
+        -0.99999737739562988,
+        -0.99999761581420898,
+        -0.99997073411941528
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 3,
       "componentType": 5126,
-      "count": 18879,
+      "count": 38984,
       "max": [
-        0.9999997615814209,
-        0.99999994039535522,
+        0.99998682737350464,
+        0.99940025806427002,
         1,
         1
       ],
       "min": [
-        -1,
-        -0.99999713897705078,
-        -1,
+        -0.99996680021286011,
+        -0.99984967708587646,
+        -0.99999278783798218,
         -1
       ],
       "type": "VEC4"
@@ -54,23 +54,23 @@
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 18879,
+      "count": 38984,
       "max": [
-        0.99500000476837158,
-        0.94315797090530396
+        0.9990839958190918,
+        0.99883997440338135
       ],
       "min": [
-        0.004999999888241291,
-        0.004999999888241291
+        0.0030162299517542124,
+        0.0015825099544599652
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 89988,
+      "count": 213255,
       "max": [
-        18878
+        38983
       ],
       "min": [
         0
@@ -80,42 +80,42 @@
   ],
   "asset": {
     "extras": {
-      "author": "grafi (https://sketchfab.com/zdenkoroman)",
+      "author": "quaz30 (https://sketchfab.com/quaz30)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/puma-basket-shoe-sneakers-3d-scan-4b64236e1acc470d9d5df72a40867e3b",
-      "title": "Puma Basket Shoe Sneakers 3D Scan"
+      "source": "https://sketchfab.com/3d-models/nike-air-zoom-pegasus-36-00fd99e778c244c3bd3b65f99dad7cb2",
+      "title": "Nike Air Zoom Pegasus 36"
     },
-    "generator": "Sketchfab-8.25.0",
+    "generator": "Sketchfab-9.6.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 359952,
+      "byteLength": 853020,
       "byteOffset": 0,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 151032,
-      "byteOffset": 359952,
+      "byteLength": 311872,
+      "byteOffset": 853020,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 453096,
-      "byteOffset": 510984,
+      "byteLength": 935616,
+      "byteOffset": 1164892,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 302064,
-      "byteOffset": 964080,
+      "byteLength": 623744,
+      "byteOffset": 2100508,
       "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
@@ -123,25 +123,25 @@
   ],
   "buffers": [
     {
-      "byteLength": 1266144,
+      "byteLength": 2724252,
       "uri": "scene.bin"
     }
   ],
   "images": [
     {
-      "uri": "textures/puma_low_baseColor.jpeg"
+      "uri": "textures/NikeShoe_baseColor.jpeg"
     },
     {
-      "uri": "textures/puma_low_metallicRoughness.png"
+      "uri": "textures/NikeShoe_metallicRoughness.png"
     },
     {
-      "uri": "textures/puma_low_normal.jpeg"
+      "uri": "textures/NikeShoe_normal.png"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
-      "name": "puma_low",
+      "name": "NikeShoe",
       "normalTexture": {
         "index": 2,
         "scale": 1,
@@ -174,6 +174,7 @@
   ],
   "meshes": [
     {
+      "name": "defaultMaterial",
       "primitives": [
         {
           "attributes": {
@@ -206,35 +207,41 @@
       "children": [
         2
       ],
-      "matrix": [
-        -1,
-        -1.6081226229577292e-16,
-        2.2204460492503131e-16,
-        0,
-        -2.2204460492503131e-16,
-        4.4408920985006262e-16,
-        -1,
-        0,
-        1.6081226229577292e-16,
-        -1,
-        -2.2204460492503131e-16,
-        0,
-        0.0089450143277645111,
-        -0.3355427086353302,
-        -0.3355427086353302,
-        1
-      ],
       "name": "RootNode (model correction matrix)"
     },
     {
       "children": [
         3
       ],
-      "name": "puma_low.obj.cleaner.materialmerger.gles"
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        -4.3711390063094768e-08,
+        0.999999999999999,
+        0,
+        0,
+        -0.999999999999999,
+        -4.3711390063094768e-08,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Collada visual scene group"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "shoe"
     },
     {
       "mesh": 0,
-      "name": ""
+      "name": "defaultMaterial"
     }
   ],
   "samplers": [
